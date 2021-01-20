@@ -31,9 +31,7 @@ var getToken = function()
         {
             accessToken = data.access_token;
             categoryList();
-            playLists();
-            trackLists();
-            displayTrackDetails();
+
         })
     });
 };
@@ -65,6 +63,8 @@ var categoryList = function()
                 catLi.appendChild(cat);
                 catListEl.appendChild(catLi);
             }
+
+            playLists();
         })
     });
 }
@@ -100,6 +100,8 @@ var playLists = function()
                     playLi.appendChild(play);
                     playlistEl.appendChild(playLi);
                 }
+
+                trackLists();
             })
         });
     }
@@ -140,6 +142,8 @@ var trackLists = function()
                         trackLi.appendChild(track);
                         tracklistEl.appendChild(trackLi);
                     }
+
+                    displayTrackDetails();
                 }) 
             });
     
