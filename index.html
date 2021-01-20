@@ -7,13 +7,30 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> <!--force main page to HTTPS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
-    <title>Spotify Test</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Spotify API</title>
   </head>
 
   <body>
-    <a href="./authorization_code/public/index.html"><h1 class="text-center bg-dark text-white p-3">spotify test</h1></a>
-      
+    <a href="./index.html"><h1 class="text-center bg-dark text-white p-3">Spotify API</h1></a>
+    <div>
+      <label>Song:</label>
+      <input id= "search">
+      <button id= "btn">SEARCH</button>
+    </div>
+    <img class="" style="width: 200px; height: 200px;" id="album-image">
 
+    <p>Song:<span id="song-name"></span></p>
+    <p>Album:<span id="album"></span></p>
+    <p>Artist:<span id="artist"></span></p>
+    <P>Spotify:<a id="spotify"></a></P>
+
+    <audio controls id = "preview">
+      <source  src="" type="audio/mpeg">
+    </audio>  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
 
